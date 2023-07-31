@@ -314,3 +314,34 @@ h4{
     }    
 
 }
+ .persons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    cursor: pointer;
+ }
+
+.person{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+ .profile{
+    justify-content: center;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+ }
+ img{
+    justify-content:center;
+ }
+
+ .name{
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+ }
