@@ -15,13 +15,12 @@ body {
 
 body{
     min-height: 100vh;
+    max-width: fit-content;
     margin: 0;
     padding: 0;
     background-color: #c9e197;
     background-repeat: no-repeat;
     background-size: cover;
-    /*background-image: linear-gradient(to right top, #c9e197, #c3d797, #bccc98, #b6c298, #afb898, #abab90, #a49e89, #9b9283, #8f8078, #7f706e, #6c6163, #595357);*/
-    /*background-image: linear-gradient(to left top, #C9E197, #C3d797, #BCCC98, #B6C298, #AFB898, #ABAB90, #A49E89, #9B9283, #8F8078, #7F706E, #6C6163, #595357); */
     font-family: 'Monserrat',sans-serif, Arial, Helvetica, sans-serif,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -230,112 +229,40 @@ a:hover:after{
     height: 100vh;
 }
 
-/*title styles*/
+/*Marta*/
 
-
-.title{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content:space-evenly;
-    color: #595357;
-}
-
-h1{
-    width: 100%;
-    font-size: 9em;
-    font-weight: 40;
-    display: flex;
-    justify-content: center;
-}
-
-h4{
-    width: 100%;
-    font-size: 3em;
-    font-weight: 10;
-    display: flex;
-    justify-content: center;
-}
-
-/*Responsive title*/
-@media (max-width: 820px){
-
-    .title{
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content:space-evenly;
-        color: #595357;
-    }
-    
-    h1{
-        width: 100%;
-        font-size: 6em;
-        font-weight: 40;
-        display: flex;
-        justify-content: center;
-    }
-    
-    h4{
-        width: 100%;
-        font-size: 2.5em;
-        font-weight: 10;
-        display: flex;
-        justify-content: center;
-    }
-    
-
-}
-
-@media (min-width : 54px) and (max-width : 800px) {
-
-    .title{
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content:center;
-        color: #3E3A3D;
-    }
-    
-    h1{
-        width: 100%;
-        font-size: 2em;
-        font-weight: 600;
-        display: flex;
-        justify-content: center;
-        padding-bottom: 2em;
-    }
-    
-    h4{
-        width: 100%;
-        font-size: 1.5em;
-        font-weight: 300;
-        display: flex;
-        justify-content: center;
-        padding-bottom: 2em;
-    }    
-
-}
-
-.bobo{
+.clubber{
+    box-sizing: border-box;
     font-family: 'Monserrat',sans-serif, Arial, Helvetica, sans-serif,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #595357;
-    font-weight: bold;
-    font-size: 1em;
-    margin: 4em 2em 4em 2em;
-    padding: 4em 2em 4em 2em;
+    font-weight: bolder;
+    margin: 80px auto;
+    width: 90%;
+}
+
+.text-box h2{
+    font-size: 42px;
+    width: 50%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: end;
+}
+
+.text-box p{
+    font-size: 16px;
+    text-align: justify;
+    line-height: 2em;
 }
 
 .circle{
+    max-width: 440px;
+    float: left;
+    margin-right: 2em;
+    margin-bottom: 1em;
     position: relative;
-    width: 400px;
-    height: 400px;
+    shape-outside: circle(50%);
+    shape-margin: 1em;
+    width: 380px;
+    height: 380px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -343,15 +270,12 @@ h4{
 }
 
 .person{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 350px;
-    height: 350px;
-    background: url(../images/Marta.png) ;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: url(../images/Marta.png);
     background-size: cover;
     border-radius: 50%;
-
 }
 
 
@@ -364,6 +288,323 @@ h4{
 .nombre span{
     position: absolute;
     left: 50%;
-    font-size: 1em;
-    transform-origin: 0 100px;
+    font-size: 2em;
+    transform-origin: 0 200px;
+}
+
+/*Antonio*/
+
+.clubber2{
+    box-sizing: border-box;
+    font-family: 'Monserrat',sans-serif, Arial, Helvetica, sans-serif,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #595357;
+    font-weight: bolder;
+    margin: 80px auto;
+    width: 90%;
+}
+
+.text-box2 h2{
+    font-size: 42px;
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+.text-box2 p{
+    font-size: 16px;
+    text-align: justify;
+    line-height: 2em;
+}
+
+.circle2{
+    max-width: 440px;
+    float: right;
+    margin-left: 2em;
+    margin-bottom: 1em;
+    position: relative;
+    shape-outside: circle(50%);
+    shape-margin: 1em;
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.person2{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: url(../images/Antonio.png);
+    background-size: cover;
+    border-radius: 50%;
+}
+
+
+.nombre2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.nombre2 span{
+    position: absolute;
+    left: 50%;
+    font-size: 2em;
+    transform-origin: 0 200px;
+}
+
+/*Lele*/
+
+.clubber3{
+    box-sizing: border-box;
+    font-family: 'Monserrat',sans-serif, Arial, Helvetica, sans-serif,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #595357;
+    font-weight: bolder;
+    margin: 80px auto;
+    width: 90%;
+}
+
+.text-box3 h2{
+    font-size: 42px;
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+.text-box3 p{
+    font-size: 16px;
+    text-align: justify;
+    line-height: 2em;
+}
+
+.circle3{
+    max-width: 440px;
+    float: left;
+    margin-right: 2em;
+    margin-bottom: 1em;
+    position: relative;
+    shape-outside: circle(50%);
+    shape-margin: 1em;
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.person3{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: url(../images/Lele.png);
+    background-size: cover;
+    border-radius: 50%;
+}
+
+
+.nombre3{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.nombre3 span{
+    position: absolute;
+    left: 50%;
+    font-size: 2em;
+    transform-origin: 0 200px;
+}
+
+
+/*Carlos*/
+
+.clubber4{
+    box-sizing: border-box;
+    font-family: 'Monserrat',sans-serif, Arial, Helvetica, sans-serif,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #595357;
+    font-weight: bolder;
+    margin: 80px auto;
+    width: 90%;
+}
+
+.text-box4 h2{
+    font-size: 42px;
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+.text-box4 p{
+    font-size: 16px;
+    text-align: justify;
+    line-height: 2em;
+}
+
+.circle4{
+    max-width: 440px;
+    float: right;
+    margin-left: 2em;
+    margin-bottom: 1em;
+    position: relative;
+    shape-outside: circle(50%);
+    shape-margin: 1em;
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.person4{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: url(../images/Carlos.png);
+    background-size: cover;
+    border-radius: 50%;
+}
+
+
+.nombre4{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.nombre4 span{
+    position: absolute;
+    left: 50%;
+    font-size: 2em;
+    transform-origin: 0 200px;
+}
+
+
+/*Pablo*/
+
+.clubber5{
+    box-sizing: border-box;
+    font-family: 'Monserrat',sans-serif, Arial, Helvetica, sans-serif,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #595357;
+    font-weight: bolder;
+    margin: 80px auto;
+    width: 90%;
+}
+
+.text-box5 h2{
+    font-size: 42px;
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+.text-box5 p{
+    font-size: 16px;
+    text-align: justify;
+    line-height: 2em;
+}
+
+.circle5{
+    max-width: 440px;
+    float: left;
+    margin-right: 2em;
+    margin-bottom: 1em;
+    position: relative;
+    shape-outside: circle(50%);
+    shape-margin: 1em;
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.person5{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: url(../images/Pablo.png);
+    background-size: cover;
+    border-radius: 50%;
+}
+
+
+.nombre5{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.nombre5 span{
+    position: absolute;
+    left: 50%;
+    font-size: 2em;
+    transform-origin: 0 200px;
+}
+
+/*Pilar*/
+
+.clubber6{
+    box-sizing: border-box;
+    font-family: 'Monserrat',sans-serif, Arial, Helvetica, sans-serif,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #595357;
+    font-weight: bolder;
+    margin: 80px auto;
+    width: 90%;
+}
+
+.text-box6 h2{
+    font-size: 42px;
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+.text-box6 p{
+    font-size: 16px;
+    text-align: justify;
+    line-height: 2em;
+}
+
+.circle6{
+    max-width: 440px;
+    float: right;
+    margin-left: 2em;
+    margin-bottom: 1em;
+    position: relative;
+    shape-outside: circle(50%);
+    shape-margin: 1em;
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.person6{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: url(../images/Pilar.png);
+    background-size: cover;
+    border-radius: 50%;
+}
+
+
+.nombre6{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.nombre6 span{
+    position: absolute;
+    left: 50%;
+    font-size: 2em;
+    transform-origin: 0 200px;
 }

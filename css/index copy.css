@@ -358,7 +358,7 @@ h4{
 
 .texto{
     height: 320px;
-    width: 500px;
+    width: 800px;
     display: flex;
     flex-direction: column;
     justify-content:space-evenly;
