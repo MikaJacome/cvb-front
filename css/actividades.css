@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-html, body {
+body {
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -15,13 +15,12 @@ html, body {
 
 body{
     min-height: 100vh;
+    max-width: fit-content;
     margin: 0;
     padding: 0;
-    background-image: url(../images/bgmap.png);
+    background-color: #c9e197;
     background-repeat: no-repeat;
     background-size: cover;
-    /*background-image: linear-gradient(to right top, #c9e197, #c3d797, #bccc98, #b6c298, #afb898, #abab90, #a49e89, #9b9283, #8f8078, #7f706e, #6c6163, #595357);*/
-    /*background-image: linear-gradient(to left top, #C9E197, #C3d797, #BCCC98, #B6C298, #AFB898, #ABAB90, #A49E89, #9B9283, #8F8078, #7F706E, #6C6163, #595357); */
     font-family: 'Monserrat',sans-serif, Arial, Helvetica, sans-serif,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -31,7 +30,6 @@ header{
     flex-direction: row;
     justify-content: space-between;
     padding-top: 10px;
-    flex-wrap: wrap;
 }
 
 .logo{
@@ -46,20 +44,24 @@ header{
 
 .navbar{
    /* height: 100%;*/ 
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     color: #595357;
-    padding-right: 30px;
 }
 
 .navbar-links {
     height: 4em;
+    width: 80%;
 }
 
 .navbar-links ul {
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     margin: 0;
     padding: 0;
 }
@@ -73,6 +75,7 @@ header{
     text-decoration: none;
     color: #595357;
     padding: 1rem;
+    font-size: 1.5em;
 }
 
 a{  
@@ -122,6 +125,8 @@ a:hover:after{
     background-color: #595357;
     border-radius: 10px;
 }
+
+
 
 /*Responsive navbar*/
 
@@ -225,33 +230,73 @@ a:hover:after{
     height: 100vh;
 }
 
+
+
+
+
 /*title styles*/
 
-
-.title{
-    height: 100%;
+.cuerpo{
+    min-height: 100%;
     width: 100%;
+    box-sizing: border-box;
     display: flex;
-    flex-direction: column;
-    justify-content:space-evenly;
-    color: #595357;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto{
+    box-sizing: border-box;
+    height: 100%;
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3em;
+    padding-left: 1em;
+}
+.pimg{
+    height: 88%;
+    width: 100%;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto{
+    box-sizing: border-box;
+    height: 100%;
+    width: 66%;
+    align-items: center;
+    padding-top: 5em;
 }
 
 h1{
-    width: 100%;
-    font-size: 9em;
-    font-weight: 40;
+    height: 90%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 6em;
+    color: #595357;
+    line-height: 1.2em;
     display: flex;
     justify-content: center;
 }
 
-h4{
+.main-text{
     width: 100%;
-    font-size: 3em;
-    font-weight: 10;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2em;
+    color: #595357;
+    text-align: justify;
+    padding: 1em 1em 1em 1em;
+    align-self: center;
+    line-height: 2em;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
+
 
 /*Responsive title*/
 @media (max-width: 820px){
@@ -313,4 +358,121 @@ h4{
         padding-bottom: 2em;
     }    
 
+}
+
+
+/*Leclab*/
+
+#lunes{
+    background-color: #595357;
+    color: #c9e197;
+    height: 95%;
+    flex-direction: row-reverse;
+}
+
+
+
+#lunes .main-text{
+    width: 100%;
+    height: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2em;
+    text-align: justify;
+    padding: 0 1em 1em 2em;
+    line-height: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h3{
+    height: 2em;
+    font-size: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+#leclablink{
+    color: #A4AC95;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 1em;
+}
+
+
+/*Cómo se debate*/
+
+.estructura{
+    min-height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 65%;
+}
+
+.cuerpo{
+    min-height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto{
+    box-sizing: border-box;
+    height: 100%;
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3em;
+    padding-left: 1em;
+}
+.pimg{
+    height: 88%;
+    width: 100%;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto{
+    box-sizing: border-box;
+    height: 100%;
+    width: 66%;
+    align-items: center;
+    padding-top: 5em;
+}
+
+h1{
+    height: 90%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 6em;
+    color: #595357;
+    line-height: 1.2em;
+    display: flex;
+    justify-content: center;
+}
+
+.main-text{
+    width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2em;
+    color: #595357;
+    text-align: justify;
+    padding: 1em 1em 1em 1em;
+    align-self: center;
+    line-height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
